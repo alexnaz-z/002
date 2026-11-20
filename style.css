@@ -10,17 +10,17 @@
     align-content: flex-start;
     gap: 15px;
     flex: 1 0 200px;
-    padding: 15px;
+    padding: 10px;
     min-height: 100%;
 }
 
 .item{
     min-height: 200px;
     flex: 1 0 250px;
-    background-color: #656e40;
+    background-color: #3d4328;
     overflow-wrap: break-word;
     border-radius: 10px;
-    border: 2px ridge #9ba766;
+    border: 2px solid #596527;
 }
 
 .item p{
@@ -45,7 +45,7 @@
 
 #section1{
     min-height: 100vh;
-    background-color: #656e40;
+    background-color: #3d4328;
     padding-inline: clamp(0px, 22vw - 100px, 30%);
 
 }
@@ -77,7 +77,7 @@
     height: auto;
     width: 100%;
     overflow: hidden;
-    margin: 50px 15px 50px 15px;
+    margin: 50px 10px 50px 10px;
     padding: 30px 15px 40px 15px;
 }
 
@@ -232,8 +232,8 @@ nav {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 4px;
     border-radius: 10px;
-    border: 2px solid #474747;
-    margin: 0px 15px 0px 15px;
+    border: 2px inset #474747;
+    margin: 0px 10px 0px 10px;
 }
 
 .logo {
@@ -392,7 +392,7 @@ h1 span {
         flex-direction: column;
         gap: 40px;
         padding-inline: 25px;
-        padding-top: 110px;
+        padding-top: 90px;
     }
 
     .hero-image img {
