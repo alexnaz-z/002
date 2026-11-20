@@ -9,12 +9,45 @@
 <body>
 
     
-<button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-</button>
 
-<script src="script.js"></script>
+
+    
+
+    <nav>
+        <h2 class="logo">ALEX<span>.</span></h2>
+
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#section1">About</a></li>
+            <li><a href="#section2">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="hero" id="home">
+    <div class="hero-container">
+
+        <!-- LEFT COLUMN: IMAGE -->
+        <div class="hero-image">
+            <img src="images/img15.jpg" alt="Alex Naz">
+        </div>
+
+        <!-- RIGHT COLUMN: EXISTING CONTENT -->
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm<br><span>ALEX NAZ.</span></h1>
+
+            <p class="description">
+                A simple website built with HTML and CSS.
+                Clean design, smooth effects, and creativity.
+            </p>
+
+            <a href="#section2" class="btn">Contact Me</a>
+        </div>
+
+    </div>
+</main>
 
 
 
@@ -31,26 +64,37 @@
     </div>
 
     <div id="section2">
-
-    </div>
-    
-    <div>
-        <h1>Hi</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nostrum et ducimus tenetur provident ipsa quas eligendi illo molestias libero aperiam expedita amet voluptas impedit possimus asperiores, voluptatibus non atque.</p>
-        <table>
-            <tr>
-                <th>c1</th>
-                <th>c2</th>
-            </tr>
-            <tr>
-                <td>ghh</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-            </tr>
+        <div id="letter">
+            <div class="postcard-art">
+                <img src="images/img3.jpg" alt="postcard img">
+            </div>
 
             
-        </table>
+
+            <form class="postcard-form">
+                <div id="head-stamp">
+                    <h2>CONTACT</h2>
+                    <div id="stamp"></div>
+                </div>
+                
+
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Write your postcard message..."></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
+
+
+    <div id="footer">
+        <p>© 2026 ALEX NAZ. All rights reserved.</p>
+    </div>
+
 </body>
