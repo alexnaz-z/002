@@ -107,7 +107,7 @@
   color: #212222;
 }
 
-#head-stamp{
+.head-stamp{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -115,7 +115,7 @@
     flex-direction: row;
 }
 
-#head-stamp h2{
+.head-stamp h2{
     color: #212222;
     font-size: 30px;
     margin: 0;
@@ -152,13 +152,46 @@
 
 .postcard-form button {
   margin-top: 6px;
-  padding: 10px 18px;
+  padding: 12px 30px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: #404725;
   color: #ffffff;
   cursor: pointer;
   align-self: flex-end;
+  font-weight: bold;
+  border: 2px inset #404725;
+  box-shadow: 0px 0px 15px #404725, 0px 0px 15px #404725 inset;
+  transition: 0.3s;
+
+}
+
+.postcard-form button:hover {
+    background: #f3e4cc;
+    color: #505a29;
+    transform: translateY(-5px);
+    box-shadow: none;
+    border: 2px inset #a98f66;
+    font-weight: bold;
+}
+
+#sendCont{
+    margin-top: 15px;
+}
+
+#dirMail{
+    color: #7f8366;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+
+    a:link{color:#576420}
+    a:visited{color:#242817}
+    a:hover{color:#c9b99f}
+    a:active{color:#242817} /* during click */
+
+    a[href^="mailto:alexjr.naz@gmail.com"]{
+        font-weight: bold;
+    }
 }
 
 /* Stack vertically on smaller screens: image on top, inputs below */
@@ -424,9 +457,3 @@ h1 span {
         font-size: 45px;
     }
 }
-
-
-
-
-
-
