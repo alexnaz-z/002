@@ -73,7 +73,7 @@
             <div class="letterDiv"></div>
 
             <form class="postcard-form">
-                <div id="head-stamp">
+                <div class="head-stamp">
                     <h2>CONTACT</h2>
                     <div id="stamp"></div>
                 </div>
@@ -88,7 +88,11 @@
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" placeholder="Write your postcard message..."></textarea>
 
-                <button type="submit">Send</button>
+                <div class="head-stamp" id="sendCont"> 
+                    <button type="submit">Send message</button>
+                    <p id="dirMail">...or <a href="mailto:alexjr.naz@gmail.com">send me an email.</a></p>
+                </div>
+                
             </form>
         </div>
     </div>
