@@ -14,17 +14,9 @@
     src: url(fonts/Lexend-VariableFont_wght.ttf);
 }
 
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 15px;
-    flex: 1 0 200px;
-    padding: 10px;
-    min-height: 100%;
-}
 
-.item{
+
+/* .item{
     min-height: 200px;
     flex: 1 0 250px;
     background-color: #3d4328;
@@ -46,19 +38,458 @@
     display: block;
     border-radius: 10px;
     margin-bottom: 15px;
-}
+} */
 
 #main{
     height: 100vh;
     background-color: #873f2b;
 }
 
-#section1{
+/* #section1{
     min-height: 100vh;
     background-color: #3d4328;
     padding-inline: clamp(0px, 22vw - 100px, 30%);
 
+} */
+
+/* .box{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+    flex: 1 0 200px;
+    padding: 10px;
+    min-height: 100%;
+    background-color: #5d6344;
+} */
+
+/* .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "about about"
+    "perStr desSkl";
+  gap: 60px;
+  margin: 0 10px 0 10px;
+  padding: 30px;
+  min-height: 100%;
+  
+  border-radius: 20px;
+  border: 3px inset #576420;
+  box-shadow: 0px 0px 15px #576420, 0px 0px 15px #576420;
+
 }
+
+#about {
+  grid-area: about;
+  min-height: 150px;
+}
+
+#about h2{
+    font-family: "Amarante-Regular";
+    color: white;
+    margin-bottom: 15px;
+}
+
+#about p{
+    font-family: "Lexend-VariableFont_wght";
+    color: white;
+    
+}
+
+/* Grid placement stays on each ID */
+/* #perStr {
+  grid-area: perStr;
+}
+
+#desSkl {
+  grid-area: desSkl;
+} */
+
+/* Shared styling for both #perStr and #desSkl */
+/* .info-card {
+  min-height: 150px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: 3px inset #576420;
+  box-shadow: 0px 0px 15px #576420, 0px 0px 15px #576420;
+  background-color: #454c26;
+  background-color: rgba(33, 34, 34, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.info-card ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.info-card li {
+  display: list-item;
+  margin-bottom: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "perStr"
+      "desSkl";
+
+    gap: 15px;
+  }
+
+  .info-card{
+    width: auto;
+  }
+}  */
+
+
+
+
+
+/* ========================================
+   SECTION 1 - ABOUT, PROJECTS & CERTIFICATES
+======================================== */
+
+#section1 {
+    background-color: #3d4328;
+    color: #eee6d3;
+      padding-inline: clamp(0px, 22vw - 100px, 30%);
+}
+
+/* SHARED SECTION HEADINGS */
+
+#section1 .section-title {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 700;
+    color: #e6cba8;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+    font-family: "Amarante-Regular";
+}
+
+
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
+#section1 .about {
+    padding-block: 70px 55px;
+    margin: 0 10px 0 10px;
+}
+
+#section1 .about-description {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #ded9c7;
+    text-align: justify;
+    margin-bottom: 35px;
+    font-family: "Lexend-VariableFont_wght";
+}
+
+
+/* SKILLS CARDS */
+
+#section1 .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+#section1 .skills-card {
+    background-color: #494e32;
+    border: 1px solid #77734e;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+#section1 .skills-card h3 {
+    font-size: 1.35rem;
+    color: #e6cba8;
+    margin-bottom: 20px;
+    font-family: "Amarante-Regular";
+}
+
+#section1 .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: "Lexend-VariableFont_wght";
+}
+
+#section1 .skills-list span {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #a49a75;
+    border-radius: 5px;
+    color: #eee6d3;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    transition: all 0.25s ease;
+}
+
+#section1 .skills-list span:hover {
+    background-color: #b66b4b;
+    border-color: #b66b4b;
+    color: #fff5e8;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   PROJECTS SECTION
+======================================== */
+
+#section1 .projects {
+    padding-block: 55px;
+    margin: 0 10px 0 10px;
+}
+
+#section1 .project-card {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    background-color: #494e32;
+    border: 1px solid #77734e;
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* PROJECT IMAGE PLACEHOLDER */
+
+#section1 .project-image {
+    flex: 0 0 35%;
+    min-height: 230px;
+    /* background-color: #b66b4b; */
+    border-radius: 8px;
+
+    background-image: url("images/giphy (7-7).gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PROJECT TEXT */
+
+#section1 .project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 10px;
+}
+
+#section1 .project-category {
+    display: inline-block;
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #d79b79;
+    margin-bottom: 12px;
+    font-family: "Lexend-VariableFont_wght";
+}
+
+#section1 .project-content h3 {
+    font-size: clamp(1.25rem, 2vw, 1.7rem);
+    line-height: 1.4;
+    color: #e6cba8;
+    margin-bottom: 15px;
+    font-family: "Amarante-Regular";
+}
+
+#section1 .project-content p {
+    color: #ded9c7;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-family: "Lexend-VariableFont_wght";
+}
+
+
+/* ========================================
+   CERTIFICATES SECTION
+======================================== */
+
+#section1 .certificates {
+    padding-block: 55px 80px;
+    margin: 0 10px 0 10px;
+}
+
+#section1 .certificates-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* CERTIFICATE CARDS */
+
+#section1 .certificate-card {
+    background-color: #494e32;
+    border: 1px solid #77734e;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#section1 .certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: #c27c59;
+}
+
+
+/* CERTIFICATE IMAGE */
+
+#section1 .certificate-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #b66b4b;
+    overflow: hidden;
+}
+
+#section1 .certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+#section1 .certificate-card:hover .certificate-image img {
+    transform: scale(1.04);
+}
+
+
+/* CERTIFICATE TEXT */
+
+#section1 .certificate-content {
+    padding: 22px;
+}
+
+#section1 .certificate-source {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d79b79;
+    margin-bottom: 10px;
+    font-family: "Lexend-VariableFont_wght";
+}
+
+#section1 .certificate-content h3 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #e6cba8;
+    margin-bottom: 12px;
+    font-family: "Amarante-Regular";
+}
+
+#section1 .certificate-content p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #ded9c7;
+    font-family: "Lexend-VariableFont_wght";
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    #section1 .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    #section1 .certificates-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* MOBILE DEVICES */
+
+@media (max-width: 600px) {
+
+    #section1 .about {
+        padding-block: 45px 35px;
+    }
+
+    #section1 .section-title {
+        margin-bottom: 20px;
+    }
+
+    #section1 .about-description {
+        text-align: left;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    #section1 .skills-card {
+        padding: 20px;
+    }
+
+    #section1 .skills-list {
+        gap: 8px;
+    }
+
+    #section1 .skills-list span {
+        font-size: 0.8rem;
+        padding: 7px 10px;
+    }
+
+    #section1 .projects {
+        padding-block: 35px;
+    }
+
+    /* PROJECT IMAGE MOVES ABOVE TEXT */
+
+    #section1 .project-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    #section1 .project-image {
+        flex: none;
+        width: 100%;
+        min-height: 190px;
+    }
+
+    #section1 .project-content {
+        padding: 5px;
+    }
+
+    #section1 .certificates {
+        padding-block: 35px 55px;
+    }
+
+    #section1 .certificates-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #section1 .certificate-image {
+        aspect-ratio: 16 / 9;
+    }
+
+}
+
 
 
 
@@ -126,7 +557,7 @@
 }
 
 .head-stamp h2{
-    color: #212222;
+    color: #454c26;
     font-size: 30px;
     margin: 0;
     font-family: "Amarante-Regular";
@@ -311,6 +742,7 @@ nav {
     letter-spacing: 2px;
     color: #ffffff;
     font-family: "Amarante-Regular";
+    letter-spacing: 0.15em;
 }
 
 .logo span{
@@ -318,7 +750,7 @@ nav {
     color: #8ea040;
 }
 
-ul {
+nav ul {
     display: flex;
     gap: 35px;
     list-style: none;
@@ -420,7 +852,7 @@ h1 {
 
 h1 span {
     color: #f5cca0;
-    letter-spacing: 6px;
+    letter-spacing: 0.05em;
 }
 
 .description {
@@ -447,7 +879,7 @@ h1 span {
 
 .btn:hover {
     background: white;
-    color: #0b0b0f;
+    color: #404720;
     transform: translateY(-5px);
 }
 
