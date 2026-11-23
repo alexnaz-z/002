@@ -764,7 +764,7 @@ nav a.active {
     display: none;
     z-index: 150;
     width: 25px;
-    height: 23.6px;
+    height: 22px;
     position: relative;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -775,13 +775,13 @@ nav a.active {
   position: absolute;
   left: 0;
   width: 25px;
-  height: 1.6px;
+  height: 1.5px;
   background: #fff;
   
 }
 
 .line1 { top: 7px; }
-.line2 { top: 15px; }
+.line2 { top: 14px; }
 
 /* OPEN */
 .burger.active .line1 {
@@ -797,11 +797,11 @@ nav a.active {
 }
 
 @keyframes mergeTop {
-  to { top: 11px; }
+  to { top: 10.5px; }
 }
 
 @keyframes mergeBottom {
-  to { top: 11px; }
+  to { top: 10.5px; }
 }
 
 @keyframes rotateTop {
@@ -826,23 +826,23 @@ nav a.active {
 }
 
 @keyframes resetRotateTop {
-  from { top: 11px; transform: rotate(45deg); }
+  from { top: 10.5px; transform: rotate(45deg); }
   to { top: 11px; transform: rotate(0deg); }
 }
 
 @keyframes resetRotateBottom {
-  from { top: 11px; transform: rotate(-45deg); }
+  from { top: 10.5px; transform: rotate(-45deg); }
   to { top: 11px; transform: rotate(0deg); }
 }
 
 @keyframes moveTopBack {
-  from { top: 11px; }
+  from { top: 10.5px; }
   to { top: 7px; }
 }
 
 @keyframes moveBottomBack {
-  from { top: 11px; }
-  to { top: 15px; }
+  from { top: 10.5px; }
+  to { top: 14px; }
 }
 
 
