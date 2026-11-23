@@ -768,14 +768,14 @@ nav a.active {
     position: relative;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    background-color: #3d4328;
+    /* background-color: #3d4328; */
 }
 
 .line {
   position: absolute;
   left: 0;
   width: 25px;
-  height: 1.5px;
+  height: 1.6px;
   background: #fff;
   
 }
