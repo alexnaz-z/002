@@ -19,6 +19,11 @@
     src: url(fonts/Gothic\ Outline\ Title\ D\ OT\ Regular.otf);
 }
 
+/* remove blue transparent block on mobile clickables */
+.burger, .btn, .postcard-form button, #dirMail, .linkedin-link{
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 
 /* .item{
@@ -772,7 +777,6 @@ nav a.active {
     height: 23.6px;
     position: relative;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
     /* background-color: #3d4328; */
 }
 
