@@ -960,7 +960,7 @@ nav a.active {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: clamp(5px, 4vw, 100px);
+    gap: clamp(15px, 4vw, 50px);
     
     
 }
@@ -1084,7 +1084,7 @@ h1 span {
 
     .hero-container {
         flex-direction: column;
-        gap: 40px;
+        /* gap: 40px; */
         padding-inline: 25px;
         padding-top: 100px;
         padding-bottom: 60px;
