@@ -20,7 +20,7 @@
 }
 
 /* remove blue transparent block on mobile clickables */
-.burger, .btn, .postcard-form button, #dirMail, .linkedin-link{
+.burger, .mobile-overlay ul li a, .btn, .postcard-form button, #dirMail, .linkedin-link{
     -webkit-tap-highlight-color: transparent;
 }
 
