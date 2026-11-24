@@ -587,6 +587,7 @@
     align-self: flex-end;
     height: 70px;
     width: 70px;
+    flex-shrink: 0;
 }
 
 .letterDiv{
