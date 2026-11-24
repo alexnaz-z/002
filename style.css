@@ -960,7 +960,7 @@ nav a.active {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: clamp(5px, 4vw, 100px);
     
     
 }
@@ -978,17 +978,18 @@ nav a.active {
 
 /* LEFT COLUMN: IMAGE */
 .hero-image {
-    flex: 2/5;
+    flex: 8;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #3d4328; */
     
 }
 
 .hero-image img {
     width: 100%;
     max-width: 350px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.2;
     object-fit: cover;
     border-radius: 50%;
     border: 4px inset #b87333;
@@ -997,12 +998,13 @@ nav a.active {
 
 /* RIGHT COLUMN: CONTENT */
 .hero-content {
-    flex: 3/5;
+    flex: 12;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
+    /* background-color: #404720; */
 }
 
 .subtitle {
@@ -1016,7 +1018,7 @@ nav a.active {
 h1 {
     color: #242817;
     font-family: "Amarante";
-    font-size: clamp(45px, 8vw, 85px);
+    font-size: clamp(45px, 5vw, 70px);
     line-height: 1.1;
     margin-bottom: 25px;
 }
@@ -1028,7 +1030,7 @@ h1 span {
 
 .description {
     color: #c9b99f;
-    max-width: 550px;
+    max-width: 100;
     line-height: 1.8;
     margin-bottom: 20px;
     font-family: "Lexend";
@@ -1089,7 +1091,8 @@ h1 span {
     }
 
     .hero-image img {
-        max-width: 220px;
+        max-width: 200px;
+        aspect-ratio: 1 / 1;
     }
 
     .hero-content {
@@ -1097,9 +1100,7 @@ h1 span {
         text-align: center;
     }
 
-    h1 {
-        font-size: 45px;
-    }
+   
 }
 
 
