@@ -13,7 +13,11 @@
 <body>
 
     <nav>
-        <h2 class="logo">ALEX<span>.</span></h2>
+        <!-- <h2 class="logo">ALEX<span>.</span></h2> -->
+
+        <a href="#home" class="logo-link">
+            <h2 class="logo">ALEX<span>.</span></h2>
+        </a>
 
         <ul>
             <!-- <li><a href="#home" class="active">Home</a></li> -->
@@ -146,7 +150,7 @@
                 </h3>
 
                 <p>
-                    Designed to modernize traditional library workflows, this centralized digital platform replaces manual recording and physical searches with streamlined resource and record management for librarians. Students and faculty can easily search, track availability, and access learning materials from anywhere. By automating record-keeping and digitizing resources, it reduces manual workload while supporting a shift toward digital learning.
+                    Designed to modernize library workflows, this centralized digital platform replaces manual recording and physical searches with streamlined resource and record management for librarians. Students can search, track availability, and access learning materials anywhere, while automated record-keeping and digitizing resources reduces manual workload while supporting a shift toward digital learning.
                 </p>
             </div>
 
@@ -230,6 +234,12 @@
 
     <div id="section2">
         <div id="letter">
+
+            <div class="head-stamp">
+                    <h2>Send me a message or<br>just say hi! :)</h2>
+                    <div id="stamp"></div>
+            </div>
+
             <div class="postcard-art">
                 <img src="https://lh3.googleusercontent.com/d/1bXL14nUDAtXkszsgFdgq8FICxbWo155O" alt="postcard img">
             </div>
@@ -237,12 +247,6 @@
             <div class="letterDiv"></div>
 
             <form class="postcard-form">
-                <div class="head-stamp">
-                    <h2>SEND A POSTCARD</h2>
-                    <div id="stamp"></div>
-                </div>
-                
-
                 <label for="name">Name</label>
                 <input id="name" type="text" placeholder="Y/N" required>
 
@@ -252,7 +256,7 @@
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" placeholder="Write your postcard message..."></textarea>
 
-                <div class="head-stamp" id="sendCont"> 
+                <div id="sendCont"> 
                     <button type="submit">Send postcard</button>
                     <p id="dirMail">...or <a href="mailto:alexjr.naz@gmail.com">send me an email.</a></p>
                 </div>
