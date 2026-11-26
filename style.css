@@ -727,7 +727,7 @@
 /* Stack vertically on smaller screens: image on top, inputs below */
 @media (max-width: 700px) {
   #letter{
-    padding: 30px 20px 30px 20px;
+    padding: 30px 15px 30px 15px;
 
     grid-gap: 0;
     grid-template-columns: 1fr;
@@ -739,7 +739,7 @@
   .head-stamp{
     margin-bottom: 50px;
     max-height: 60px;
-    padding: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
   }
 
   #stamp{
@@ -1263,7 +1263,7 @@ footer {
 }
 
 footer p {
-    color: rgb(101, 87, 8);
+    color: rgb(121, 106, 16);
     font-size: 13px;
     font-family: "Amarante";
     margin: 0;
