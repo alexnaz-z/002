@@ -1218,7 +1218,7 @@ img {
 /* /////FOOTER///// */
 
 footer {
-    background-color: #1f1f1f;
+    background-color: #151515;
     min-height: 150px;
     padding: 30px clamp(20px, 10vw, 30%);
     display: flex;
