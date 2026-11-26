@@ -587,8 +587,7 @@
 }
 
 .head-stamp h2{
-    color: #2a2f18;
-    /* font-size: 30px; */
+    color: #3a431b;
     font-size: clamp(30px, 5vw, 45px);
     text-align: center;
     margin: 0;
@@ -683,6 +682,8 @@
   box-sizing: border-box;
   font-family: "Amarante";
   margin-bottom: 6px;
+  /* background-color: #e8e4d6; */
+  border-color: #676767;
 }
 
 .postcard-form button {
