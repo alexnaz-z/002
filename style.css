@@ -1238,7 +1238,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 9px;
-    color: rgb(101, 87, 8);
+    color: rgb(121, 106, 16);
     text-decoration: none;
     font-family: "Amarante";
     font-size: 14px;
@@ -1263,7 +1263,7 @@ footer {
 }
 
 footer p {
-    color: rgb(121, 106, 16);
+    color: rgb(101, 87, 8);
     font-size: 13px;
     font-family: "Amarante";
     margin: 0;
