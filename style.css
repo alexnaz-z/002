@@ -795,7 +795,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 40px;
 }
 
 nav a {
@@ -1135,30 +1135,51 @@ h1 span {
     font-family: "Lexend";
 }
 
+
+
+
 /* BUTTON */
 .btn {
+    position: relative;
     display: inline-block;
     margin-top: 20px;
     padding: 15px 35px;
-    /* background-color: #824e00; */
-    /* background: linear-gradient(45deg, #cc9900, #824e00); */
-    background: radial-gradient(circle at 50% 50%, #cc9900, #824e00);
-
+    background: #ffdeac; /* Base hover color sits underneath */
     color: #ffd7ab;
     text-decoration: none;
     border-radius: 30px;
-    transition: transform 0.3s ease;
-    font-family: "Amarante";
+    font-family: "Amarante", sans-serif;
     font-weight: 600;
     border: 1px solid #cc9900;
     filter: drop-shadow(0 4px 8px #41271d);
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Gradient layer on top */
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #cc9900, #824e00);
+    z-index: -1;
+    transition: opacity 0.3s ease;
 }
 
 .btn:hover {
-    background: white;
     color: #824e00;
+    border-color: #824e00; /* Fixed syntax error here */
     transform: translateY(-5px);
 }
+
+.btn:hover::before {
+    opacity: 0; /* Smoothly reveals the white background underneath */
+}
+
+
+
+
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
