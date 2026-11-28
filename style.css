@@ -309,7 +309,7 @@
 #section1 .project-category {
     display: inline-block;
     width: fit-content;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -372,7 +372,7 @@
 #section1 .certificate-image {
     width: 100%;
     aspect-ratio: 4 / 3;
-    background-color: #2a2f18;
+    background-color: #202412;
     overflow: hidden;
 }
 
@@ -521,7 +521,7 @@
     }
 
     #section1 .certificate-image {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 16 / 8;
     }
 
     #section1 .certificate-image img{
@@ -728,6 +728,7 @@
     a[href^="mailto:alexjr.naz@gmail.com"]{
         font-weight: bold;
         transition: 0.3s;
+        text-underline-offset: 3px;
     }
 }
 
@@ -1047,7 +1048,8 @@ nav a.active {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #873f2b;
+    /* background-color: #873f2b; */
+    background: radial-gradient(circle at 50% 50%, #954833, #6d2708);
     padding-inline: clamp(0px, 22vw - 100px, 30%);
 }
 
@@ -1113,7 +1115,7 @@ nav a.active {
 }
 
 h1 {
-    color: #2b3105;
+    color: #fdca94d4;
     font-family: "Amarante";
     font-size: clamp(45px, 5vw, 70px);
     line-height: 1.1;
@@ -1121,12 +1123,12 @@ h1 {
 }
 
 h1 span {
-    color: #f5cca0;
+    color: #faebda;
     letter-spacing: 0.05em;
 }
 
 .description {
-    color: #bdb284;
+    color: #dfc7b8;
     max-width: 100;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -1138,18 +1140,23 @@ h1 span {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 35px;
-    background: #657623;
-    color: #e8e4d6;
+    /* background-color: #824e00; */
+    /* background: linear-gradient(45deg, #cc9900, #824e00); */
+    background: radial-gradient(circle at 50% 50%, #cc9900, #824e00);
+
+    color: #ffd7ab;
     text-decoration: none;
     border-radius: 30px;
-    transition: 0.3s;
+    transition: transform 0.3s ease;
     font-family: "Amarante";
     font-weight: 600;
+    border: 1px solid #cc9900;
+    filter: drop-shadow(0 4px 8px #41271d);
 }
 
 .btn:hover {
     background: white;
-    color: #404720;
+    color: #824e00;
     transform: translateY(-5px);
 }
 
