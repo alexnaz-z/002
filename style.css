@@ -176,8 +176,8 @@
 #section1 {
     background-color: #3d4328;
     color: #eee6d3;
-      padding-inline: clamp(0px, 22vw - 100px, 30%);
-      border-top: 2px solid rgb(116, 86, 10);
+    padding-inline: clamp(0px, 22vw - 100px, 30%);
+    border-top: 2px solid rgb(116, 86, 10);
 }
 
 /* SHARED SECTION HEADINGS */
@@ -546,10 +546,6 @@
 }
 
 #letter{
-    /* display: flex;
-    flex-direction: row; */
-
-    /* align-content: space-between; */
     display: grid;
     /* grid-gap: 15px 0px;  */
     grid-template-columns: 1fr 1fr;
@@ -561,15 +557,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 3px inset #b87333;
     box-shadow: 0px 0px 15px #b87333, 0px 0px 15px #b87333 inset;
     min-height: 400px;
     height: auto;
     width: 100%;
+    max-width: 900px;
     overflow: hidden;
     margin: 50px 10px 50px 10px;
-    padding: 35px 25px 60px 25px;
+    padding: 25px 25px 40px 25px;
 }
 
 /* POSTCARD HEADER */
@@ -582,8 +579,8 @@
     /* justify-content: center; */
     flex-direction: row;
     margin-bottom: 5px;
-    max-height: 80px;
-    padding: 0 10px 0 30px;
+    height: 80px;
+    padding: 0 0 0 30px;
     
     /* background-color: #404720; */
 }
@@ -595,8 +592,9 @@
     margin: 0;
     font-family: "Amber";
     padding-right: 5px;
-    transform: rotate(-8deg) translateY(15px);
+    transform: rotate(-6deg) translateY(10px);
     z-index: 5;
+    /* -webkit-text-stroke: -10px #e8e4d6; */
 }
 
 #stamp{
@@ -661,18 +659,9 @@
     /* background-color: #b66b4b; */
 }
 
-
-
-/* .letterDiv{
-    width: 1px;
-    height: 380px;
-    background-color: #5d6344;
-    align-self: center;
-} */
-
 .postcard-form label{
     font-family: "Amarante";
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .postcard-form input,
@@ -718,7 +707,6 @@
 }
 
 #sendCont{
-    margin-top: 10px;
     text-align: end;
     width: 100%;
     display: flex;
@@ -746,9 +734,9 @@
 /* Stack vertically on smaller screens: image on top, inputs below */
 @media (max-width: 700px) {
   #letter{
-    padding: 22px 15px 26px 15px;
+    padding: 15px 15px 26px 15px;
 
-    grid-gap: 0;
+    /* grid-gap: 0; */
     grid-template-columns: 1fr;
     grid-template-areas: "head"
                          "image"
@@ -757,8 +745,8 @@
 
   .head-stamp{
     margin-bottom: 50px;
-    max-height: 60px;
-    padding: 0 5px 0 5px;
+    max-height: 70px;
+    padding: 0 0 0 20px;
   }
 
   /* .head-stamp h2{
@@ -771,7 +759,7 @@
   }
 
   .postcard-art{
-    padding: 15px 0 35px 0;
+    padding: 0px 0 20px 0;
   }
 
   .imgBorder{
@@ -782,19 +770,9 @@
     border-left: none;
     border-top: 2px dotted #111;
     /* padding: 24px 0 0 0; */
-    padding: 30px 0 15px 0;
+    padding: 20px 0 0 0;
   }
 }
-
-  /* .letterDiv{
-    width: 88%;
-    height: 1px;
-    margin-top: 20px;
-  } */
-
-  /* .postcard-art img {
-    /* height: 220px; */
-    /* aspect-ratio: 16 / 9; */
 
 
 
