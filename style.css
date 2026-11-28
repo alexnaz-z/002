@@ -177,7 +177,7 @@
     background-color: #3d4328;
     color: #eee6d3;
       padding-inline: clamp(0px, 22vw - 100px, 30%);
-      border-top: 2px solid rgb(101, 87, 8);
+      border-top: 2px solid rgb(116, 86, 10);
 }
 
 /* SHARED SECTION HEADINGS */
@@ -542,7 +542,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    border-top: 2px solid rgb(101, 87, 8);
+    border-top: 2px solid rgb(116, 86, 10);
 }
 
 #letter{
