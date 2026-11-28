@@ -734,7 +734,7 @@
 /* Stack vertically on smaller screens: image on top, inputs below */
 @media (max-width: 700px) {
   #letter{
-    padding: 20px 15px 26px 15px;
+    padding: 22px 15px 26px 15px;
 
     /* grid-gap: 0; */
     grid-template-columns: 1fr;
