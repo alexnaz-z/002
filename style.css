@@ -601,7 +601,7 @@
 
 #stamp{
     background-image: url("images/giphy (4).gif");
-    filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
     
     background-size: cover;
     background-position: center;
