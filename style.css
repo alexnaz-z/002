@@ -746,7 +746,7 @@
   .head-stamp{
     margin-bottom: 50px;
     max-height: 70px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
   }
 
   /* .head-stamp h2{
@@ -1138,7 +1138,7 @@ h1 span {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 35px;
-    background: #d48037;
+    background: #657623;
     color: #ffd6b3;
     text-decoration: none;
     border-radius: 30px;
